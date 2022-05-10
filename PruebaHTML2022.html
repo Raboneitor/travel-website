@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sitio web Html</title>
+		<link rel="stylesheet" type="text/css" href="PruebaCSS2022-dist.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ms+Madi&family=My+Soul&display=swap" rel="stylesheet">
+	</head>
+<!-- 	<style>
+		td{
+			text-align: center;
+			border: 0.5px solid white;
+			font-size: 16px;
+		}
+		col,
+		tr:nth-child(3),
+		thead,
+		tfoot{
+			background-color: #c4d06a
+		}
+		table{
+			border: 2px solid black;
+			margin: 30px;
+		}
+		span{
+			color: pink;
+			font-size: 20px;
+		}
+		label{			
+			/*display: block;*/
+		}
+
+
+	</style> -->
+	<body>
+	<a class="officialButton" href="Viajes.html">IR A LA WEB DE VIAJES</a>
+		<!-- ------------------------------------------------------------------------------------------TABLA-------------------------------------------------------------------------------- -->
+		<table>
+			<caption>HORARIO CLASES 2008</caption>
+			<colgroup>
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<td></td>
+					<td>LUNES</td>
+					<td>MARTES</td>
+					<td>MIERCOLES</td>
+					<td>JUEVES</td>
+					<td>VIERNES</td>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>8:30 - 9:30</td>
+				<td>Matemáticas</td>
+				<td rowspan="2">Dib. Tecnico</td>
+				<td>Castellano</td>
+				<td>Sociales</td>
+				<td>Frances</td>
+			</tr>
+			<tr>
+				<td>9:30 - 10:30</td>
+				<td>Física</td>
+				<td>Sociales</td>
+				<td>Tecnología</td>
+				<td>Ingles</td>
+			</tr>
+			<tr>
+				<td>10:30 - 11:30</td>
+				<td colspan="5">Patio</td>
+			</tr>
+			<tr>
+				<td>11:30 - 12:30</td>
+				<td>Tutoria</td>
+				<td>Tecnología</td>
+				<td>Castellano</td>
+				<td>Sociales</td>
+				<td>Ingles</td>
+			</tr>
+			<tr>
+				<td>12:30 - 13:30</td>
+				<td>Física</td>
+				<td>Ingles</td>
+				<td>Ingles</td>
+				<td>Religión</td>
+				<td>Tutoria</td>
+			</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5">Total Asignaturas</td>
+					<td>8</td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<hr>
+
+		<!-- ------------------------------------------------------------------------------------------FORMULARIO-------------------------------------------------------------------------------- -->
+		<form>
+			<div class="contenedorDatos datos">
+				<label>Nombre</label>
+				<input type="text" name="nombre">
+
+				<label>Apellidos</label>
+				<input type="appelidos" name="appelidos">
+
+				<label>Edad</label>
+				<input type="number" name="edad">
+
+				<label>Email</label>
+				<input type="email" name="email">
+
+				<label>Teléfono</label>
+				<input type="tel" name="tel">
+				
+				<label>URL desde la que contactas</label>
+				<input type="url" name="url">
+
+				<label>Fecha y hora</label>
+				<input type="date" name="date">
+				<input type="time" name="time">
+
+			</div>
+			<div class="contenedorDatos">
+				<label>De que color quieres la web</label>
+				<input type="color" name="color">
+
+				<label>Cuanto te está gustando la web?</label>
+				<input type="range" name="rango" step="2" min="0" max="20">
+			</div>
+
+			<div class="contenedorDatos encuesta">
+				<div class="fontSize">
+					<p>¿Qué tamaño de letra te gustaría?</p>
+					<label> Pequeño</label>
+					<input type="radio" name="size" value="peque">
+
+					<label> Mediano</label>
+					<input type="radio" name="size" value="mediano">
+
+					<label> Grande</label>
+					<input type="radio" name="size" value="grande">
+				</div>
+				<div class="border">
+					<p>¿Cómo quieres personalizar el formulario?</p>
+					<label>Borde</label>
+					<input type="checkbox" name="border">
+
+					<label>Sombra</label>
+					<input type="checkbox" name="sombra">
+
+					<label>Degradado gris</label>
+					<input type="checkbox" name="background">
+				</div>
+			</div>
+			<select name="animal">
+				<optgroup label="Domésticos">
+					<option value="gato"> Gato</option>
+					<option value="perro"> Perro</option>
+				</optgroup>
+				<optgroup label="Aves">
+					<option value="canario"> Canario</option>
+					<option value="iguana"> Iguana</option>
+					<option value="periquito"> Periquito</option>
+				</optgroup>
+				<optgroup label="Insectos">
+					<option value="tarantula"> Tarantula</option>
+					<option value="tarantula"> Escorpión</option>
+				</optgroup>
+				
+			</select>
+
+			<label>DataList</label>
+			<input list="browser" name="navs" id="navegadores">
+			<datalist id="browser">
+				<option value="Chrome">Para los que tienen mucha RAM</option>
+				<option value="Edge">Para los que les gusta arriesgar</option>
+				<option value="IExplorer">Sin comentarios</option>
+				<option value="Firefox">Optimo</option>
+				<option value="Opera">Para los que quieren gadgets</option>
+			</datalist>
+		</form>
+	</body>
+</html>
